@@ -1,0 +1,284 @@
+/*  Reset Css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Font */
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Helper */
+.container {
+    width: 1300px;
+    margin: auto;
+}
+/* Title */
+h2 {
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 0 0 8px #1a2052;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #1a2052;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #1a2052;
+    margin-bottom: 20px;
+}
+/* Header */
+header {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-image: url('img/bg_header.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top 0 right 49px;
+}
+
+header .logo {
+    margin: 10px auto auto 127px;
+}
+
+header .main-menu {
+    position: absolute;
+    bottom: 0;
+    right: 111px;
+}
+header .main-menu ul{
+    width: 694px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .main-menu ul li {
+    width: 122px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+header .main-menu ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-bottom: solid 2px #1a2052;
+    color: #1a2052;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header .main-menu ul li a:hover,
+header .main-menu ul .active a {
+    border-bottom: solid 2px #e78300;
+    color: #e78300;
+}
+
+header .main-menu ul li a:active,
+header .main-menu ul li a:focus {
+    color: #1a2052;
+}
+
+header .social-networks {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+header .social-networks ul li {
+    width: 26px;
+    height: 29px;
+    position: relative;
+    background-color: #1a2052;
+    margin-bottom: 10px;
+}
+
+header .social-networks ul li a {
+    display: block;
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+}
+
+header .social-networks ul li a:hover,
+header .social-networks ul .active a {
+    background: #e78300;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+header .social-networks ul li,
+header .social-networks ul li a {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+header .social-networks img {
+    width: 15px;
+    height: 15px;
+}
+
+header .social-networks .filled-img img {
+    width: 24px;
+    height: 24px;
+}
+
+header .social-networks ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Art et innovation*/
+.art-innovation {
+    width: 100%;
+    height: 600px;
+    background-image: url('img/flux-de-stefane-perraud-en-gare-de-est-paris-prod-digitalarti-1@3x.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.art-innovation h2 {
+    text-align: center;
+    padding-top: 28%;
+}
+
+.art-innovation p {
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 8px #1a2052;
+}
+
+/* Numart News */
+.numart-news {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/bg_numart_news.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.numart-news p {
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 18px;
+    color: #1a2052;
+}
+
+.numart-news p a:active,
+.numart-news p a:focus {
+    color: #1a2052;
+}
+
+.numart-news p a:hover {
+    color: #e78300;
+}
+
+/* Services */
+.services {
+    padding-top: 50px;
+    background-color: #f5f5f5;
+}
+
+.services .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services article {
+    width: 265px;
+    margin-bottom: 50px;
+}
+
+.services article img {
+    width: 150px;
+    display: block;
+    margin: auto auto 35px;
+}
+
+.services article p {
+    font-family: "Helvetica", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #212121;
+}
+
+.services .polygon {
+    width: 30px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
