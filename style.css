@@ -117,7 +117,9 @@ h6 {
     font-family: "SourceSansPro", sans-serif;
     font-size: 24px;
     line-height: 1.5;
+    letter-spacing: -1px;
     color: #1a2052;
+    text-transform: uppercase;
 }
 
 /* Common */
@@ -440,6 +442,12 @@ header .social-networks ul li a{
 .actus article {
     width: 550px;
     background-color: #fff;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.actus article:nth-child(2n+1) {
+    margin-left: 90px;
 }
 .actus article:after {
     content:"";
@@ -457,6 +465,7 @@ header .social-networks ul li a{
     font-size: 13px;
     line-height: 1.54;
     color: #4a4a4a;
+    margin-top: 10px;
 }
 
 .actus .container p span {
@@ -465,9 +474,21 @@ header .social-networks ul li a{
 
 .actus article img {
     width: 30%;
-    float:right;
+    float:left;
 }
 .actus article .text-box {
     width: 70%;
     float: left;
+    padding: 10px 10px 0 10px; 
+    box-sizing: border-box;
+}
+
+.actus .container {
+    margin-bottom: 50px;
+}
+
+.actus .container:after {
+    display:block;
+    content:"";
+    clear: both;
 }
