@@ -96,7 +96,7 @@ h4 {
     font-size: 20px;
     font-weight: 600;
     line-height: 1.5;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.5px;
     text-align: center;
     color: #1a2052;
     margin-bottom: 20px;
@@ -491,4 +491,68 @@ header .social-networks ul li a{
     display:block;
     content:"";
     clear: both;
+}
+
+/* Productions artistiques */
+.productions-artistiques {
+    height: 835px;
+    background-color: #1a2052;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+.productions-artistiques .container {
+    margin-top: 50px;
+}
+.productions-artistiques figure {
+    position: relative;
+    width: 550px;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+}
+
+.productions-artistiques figure img {
+    width: 540px;
+    display: block;
+    bottom: 0;
+}
+.productions-artistiques figure figcaption {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    z-index: 10;
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: right;
+    color: #fff;
+    background-color: rgba(26, 32, 82, 0.85);
+    -webkit-clip-path: polygon(0% 10px, 100% 100%, 100% 0%, 0% 0%);
+    clip-path: polygon(0% 10px, 100% 100%, 100% 0%, 0% 0%);   
+}
+.productions-artistiques article {
+    width: 550px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.productions-artistiques article:first-child {
+    margin-left: 90px;
+}
+.productions-artistiques article h4 {
+    font-weight: normal;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+.productions-artistiques article p {
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
 }
