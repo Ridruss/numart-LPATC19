@@ -495,14 +495,17 @@ header .social-networks ul li a{
 
 /* Productions artistiques */
 .productions-artistiques {
-    height: 835px;
     background-color: #1a2052;
+    background-image: url('img/bg-productions-artistiques.svg');
+    background-repeat: no-repeat;
+    background-position:  bottom right; 
     padding-top: 50px;
     padding-bottom: 50px;
     box-sizing: border-box;
 }
 .productions-artistiques .container {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .productions-artistiques figure {
     position: relative;
@@ -554,5 +557,70 @@ header .social-networks ul li a{
     font-family: "SourceSansPro", sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: -0.3px;
+    color: #fff;
+}
+
+.productions-artistiques .discover-label {
+    color: #fff;
+}
+
+.productions-artistiques .polygon path {
+    stroke: #fff;
+}
+
+/* ARTLAB */
+.artlab {
+    height: 1160px;
+    background-image: url('img/bg-artlab.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+.artlab .container {
+    margin-bottom: 40px;
+}
+.artlab img {
+    width: 100%;
+    height: 620px;
+    -webkit-clip-path: polygon(0% 0%, 100% 7%, 100% 100%, 0% 93%);
+    clip-path: polygon(0% 0%, 100% 7%, 100% 100%, 0% 93%);
+}
+
+.artlab h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.artlab article {
+    width: 360px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 210px;
+}
+.artlab article:first-child{
+    margin-left: 185px;
+}
+
+.artlab p {
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    color: #1a2052;
+}
+
+/* Footer */
+footer {
+    background-color: #212121;
+}
+
+footer h4 {
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
     color: #fff;
 }
