@@ -614,13 +614,154 @@ header .social-networks ul li a{
 /* Footer */
 footer {
     background-color: #212121;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
-
+footer .container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
 footer h4 {
     font-family: "SourceSansPro", sans-serif;
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 1.3px;
+    text-align: left;
     color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+footer article {
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 12.8px;
+    line-height: 1.64;
+}
+footer .contact-us {
+    width: 360px;
+    float: left;
+    margin-left: 20px;
+}
+footer .social-networks {
+    float: left;
+    margin-left: 115px;
+}
+footer .social-networks ul {
+    width: 55px;
+    padding: 15px 20px 15px 0;
+    border-right: 2px solid #fff;
+    box-sizing: border-box;
+}
+footer .social-networks ul li svg path{
+    fill: #fff;
+}
+footer .social-networks ul li svg {
+    width: 30px;
+    height: 30px;
+}
+footer .social-networks ul li{
+    margin-top: 15px;
+}
+footer .social-networks ul li:first-child{
+    margin-top: 0;
+}
+footer .contact-us .city,
+footer .contact-us .infos {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-top: 2px solid #fff;
+}
+footer .contact-us .infos {
+    border-bottom: 2px solid #fff;
+}
+footer .contact-us .team {
+    margin-top: 8px;
+}
+footer .letter {
+    width: 265px;
+    float: left;
+    margin-left: 115px; 
+}
+footer .letter p {
+    height: 50px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    border-top: 2px solid #fff;
+    box-sizing: border-box;
+}
+footer .letter input[type="email"] {
+    width: 190px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 6.5px 0 6.5px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+}
+footer .letter input[type="submit"] {
+    width: 75px;
+    height: 30px;
+    padding: 6.5px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #212121;
+    border: 0;  
+}
+footer .letter input {
+    float: left;
+}
+footer figure{
+    float: left;
+    margin-left: 125px;
+}
+footer figure figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+footer figure svg {
+    display: block;
+    width: 150px;
+    height: auto;
+}
+footer figure svg path {
+    stroke: #fff;
+}
+footer .links ul {
+    width: 250px;   
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+}
+footer .links {
+    margin-top: 20px;
+}
+footer .links li:after {
+    content:"•";
+    display: inline;
+    margin-left: 15px;
+}
+footer .links li:last-child:after {
+    content: none;
+}
+footer .links a{
+    font-family: "SourceSansPro", sans-serif;
+    font-size: 11px;
+    line-height: 1.45;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+footer .links a:hover {
+    color: #e78300;
 }
