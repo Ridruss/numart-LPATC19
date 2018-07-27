@@ -74,6 +74,7 @@ table {
 }
 body {
     font-family: "Helvetica", "Arial", sans-serif;
+    color: #1a2052;
 }
 .fonts-loaded * {
     font-family: "SourceSanspro", sans-serif;
@@ -83,9 +84,7 @@ body {
     width: 1300px;
     margin: auto;
 }
-.relative {
-    position: relative;
-}
+
 /* Title */
 h2 {
     font-size: 50px;
@@ -102,7 +101,6 @@ h3 {
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: center;
-    color: #1a2052;
     margin-bottom: 50px;
 }
 .white-title {
@@ -120,7 +118,6 @@ h4 {
     line-height: 1.5;
     letter-spacing: 0.5px;
     text-align: center;
-    color: #1a2052;
     margin-bottom: 20px;
 }
 h5 {
@@ -135,7 +132,6 @@ h5 {
 h6 {
     font-size: 24px;
     line-height: 1.5;
-    color: #1a2052;
     text-transform: uppercase;
 }
 
@@ -149,7 +145,6 @@ a:active, a:hover {
     line-height: 1.5;
     text-align: center;
     text-decoration: none;
-    color: #1a2052;
     margin-top: 10px;
 }
 .discover-label:hover {
@@ -162,15 +157,13 @@ a:active, a:hover {
     margin: auto;
 }
 
+
 /* Header */
 header {
     width: 100%;
     height: 250px;
     position: relative;
-    background-image: url('img/bg_header.svg');
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: top 0 right 49px;
+    background:top 0 right 49px no-repeat url('img/bg_header.svg');
 }
 header .logo {
     margin: 10px auto auto 127px;
@@ -196,12 +189,10 @@ header .main-menu ul li a {
     height: 100%;
     display: block;
     border-bottom: solid 2px #1a2052;
-    color: #1a2052;
     text-decoration: none;
     box-sizing: border-box;
 }
-header .main-menu ul li a:hover,
-header .main-menu ul .active a {
+header .main-menu ul li a:hover {
     border-bottom: solid 2px #e78300;
     color: #e78300;
 }
@@ -268,7 +259,7 @@ header .social-networks ul li a{
 }
 .art-innovation h2 {
     text-align: center;
-    padding-top: 28%;
+    padding-top: 25%;
 }
 .art-innovation p {
     font-size: 20px;
@@ -285,13 +276,10 @@ header .social-networks ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('img/bg_numart_news.svg');
-    background-repeat: no-repeat;
-    background-position: left;
+    background: no-repeat left url('img/bg_numart_news.svg');
 }
 .numart-news p {
     font-size: 18px;
-    color: #1a2052;
 }
 .numart-news p a:active,
 .numart-news p a:focus {
@@ -307,23 +295,19 @@ header .social-networks ul li a{
     padding-bottom: 50px;
     background-color: #f5f5f5;
 }
-
 .services .container {
     display: flex;
     justify-content: space-between;
 }
-
 .services article {
     width: 265px;
     margin-bottom: 50px;
 }
-
 .services article img {
     width: 150px;
     display: block;
     margin: auto auto 35px;
 }
-
 .services article p {
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 14px;
@@ -333,7 +317,6 @@ header .social-networks ul li a{
 
 /* Notre vision, notre expertise */
 .vision-expertise {
-    width: auto;
     height: 761px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -397,6 +380,10 @@ header .social-networks ul li a{
     line-height: 1.5;
     color: #f5f5f5; 
 }
+.vision-expertise h3, .vision-expertise p,
+.vision-expertise .polygon, .vision-expertise .discover-label {
+    position: relative;
+}
 .vision-expertise .chapeau {
     font-size: 16px;
     font-weight: 300;
@@ -417,7 +404,6 @@ header .social-networks ul li a{
 
 /* Actualités */
 .actus {
-    width: 100%;
     height: 766px;
     background-color: #f5f5f5;
     padding-top: 50px;
@@ -442,7 +428,6 @@ header .social-networks ul li a{
 .actus p {
     font-size: 16px;
     line-height: 1.5;
-    color: #1a2052;
 }
 .actus p ~ p {
     font-size: 13px;
@@ -579,7 +564,6 @@ header .social-networks ul li a{
 .artlab p {
     font-size: 16px;
     line-height: 1.5;
-    color: #1a2052;
 }
 
 /* Footer */
@@ -674,6 +658,7 @@ footer .letter input[type="email"] {
     font-size: 14px;
 }
 footer .letter input[type="submit"] {
+    cursor: pointer;
     width: 75px;
     height: 30px;
     padding: 6.5px;
