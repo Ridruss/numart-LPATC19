@@ -139,6 +139,12 @@ h6 {
 a:active, a:hover {
     color: #e78300;
 }
+a {
+    color: #1a2052;
+}
+a:focus, a:visited{
+    color: #1a2052;
+}
 .discover-label {
     display: block;
     width: 500px;
