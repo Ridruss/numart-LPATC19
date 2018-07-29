@@ -141,11 +141,14 @@ a:active, a:hover {
 }
 .discover-label {
     display: block;
+    width: 500px;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     text-decoration: none;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .discover-label:hover {
     color: #e78300;
@@ -539,9 +542,12 @@ header .social-networks ul li a{
 .artlab .container {
     margin-bottom: 40px;
 }
-.artlab img {
+.artlab .bg-artlab{
     width: 100%;
     height: 620px;
+    background-image: url("img/bg-artlab@3x.jpg");
+    background-size: cover;
+    background-position: center;
     -webkit-clip-path: polygon(0% 0%, 100% 7%, 100% 100%, 0% 93%);
     clip-path: polygon(0% 0%, 100% 7%, 100% 100%, 0% 93%);
 }
@@ -570,10 +576,10 @@ footer {
     padding-top: 40px;
     padding-bottom: 10px;
 }
-footer .container:after {
-    content: "";
-    display: block;
-    clear: both;
+footer .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 footer h4 {
     font-size: 20px;
@@ -591,12 +597,7 @@ footer article {
 }
 footer .contact-us {
     width: 360px;
-    float: left;
     margin-left: 20px;
-}
-footer .social-networks {
-    float: left;
-    margin-left: 115px;
 }
 footer .social-networks ul {
     width: 55px;
@@ -634,8 +635,12 @@ footer .contact-us .team {
 }
 footer .letter {
     width: 265px;
-    float: left;
     margin-left: 115px; 
+}
+footer .letter:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 footer .letter p {
     height: 50px;
@@ -669,7 +674,6 @@ footer .letter input {
     float: left;
 }
 footer figure{
-    float: left;
     margin-left: 125px;
 }
 footer figure figcaption {
@@ -774,15 +778,117 @@ footer .links a:hover {
     }
 
     footer .social-networks {
-        margin-left: 60pxpx;
+        margin-left: 60px;
     }
     footer .container figure {
         display: none;
     }
 }
 
+@media(max-width:900px) {
+    footer .container  {
+        display: block;
+        margin: auto;
+    }
+    footer .social-networks{
+        width: 360px;
+        height: auto;
+        margin: auto;
+    }
+    footer .social-networks ul{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin:10px; 
+        border: 0;
+    }
+    footer .social-networks ul li {
+        margin-top: 0;
+    }
+
+    footer .letter,
+    footer .contact-us {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    footer .letter {
+        width: 360px;
+        
+    }
+}
 @media(max-width: 768px) {
+    .art-innovation{
+        background-image: url('img/flux-de-stefane-perraud-en-gare-de-est-paris-prod-digitalarti-1@2x.jpg');
+    }
+    .vision-expertise {
+        background-image: url('img/aeroport-paris-cdg-oeuvre-sur-natures-de-miguel-chevalier@2x.jpg');
+        background-position: center;
+    }
+    .artlab .bg-artlab{
+        background-image: url('img/bg-artlab@2x.jpg'); 
+    }
     header .main-menu {
         display: none;
+    }
+    .services article {
+        flex-wrap: wrap;
+        width:44%;
+    }
+    .vision-expertise .container,
+    .productions-artistiques .container,
+    .artlab .container {
+        flex-wrap: wrap;
+    }
+    .vision-expertise .container article,
+    .productions-artistiques .container article,
+    .artlab .container article {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 600px) {
+    .actus article {
+        width: 90%;
+    }
+    .actus article img {
+        display: none;
+    }
+    .actus article .text-box{
+        width: 100%;
+    }
+    .numart-news p{
+        text-align: center;
+    }
+    .services article {
+        width: 90%;
+    }
+    .discover-label{
+        width: 95%;
+    }
+}
+@media(max-width: 480px) {
+    .art-innovation{
+        background-image: url('img/flux-de-stefane-perraud-en-gare-de-est-paris-prod-digitalarti-1.jpg');
+    }
+    .vision-expertise{
+        background-image: url('img/aeroport-paris-cdg-oeuvre-sur-natures-de-miguel-chevalier.jpg');
+        background-position: center;
+    }
+    .artlab .bg-artlab {
+        background-image: url('img/img/bg-artlab.jpg');
+    }
+    footer .social-networks,
+    footer .contact-us,
+    footer .letter,
+    footer .links {
+        width: 90%;
+    }
+    footer .contact-us .city, 
+    footer .contact-us .infos {
+        padding-left: 10px;
+        padding-right:10px;
     }
 }
